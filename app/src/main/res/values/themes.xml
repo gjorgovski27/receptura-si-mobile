@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base Theme -->
+    <style name="Theme.Recepturasi" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Primary branding color -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <!-- Accent color -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <!-- Background color -->
+        <item name="android:colorBackground">@color/white</item>
+        <!-- Text color -->
+        <item name="android:textColor">@color/black</item>
+        <!-- Status bar color -->
+        <item name="android:statusBarColor">@color/purple_700</item>
+        <!-- Navigation bar color -->
+        <item name="android:navigationBarColor">@color/white</item>
+    </style>
+
+</resources>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Receptura.si</string>
+    <string name="news_image_desc">Image of the news article</string>
+    <string name="recipe_image_desc">Image of the recipe</string>
+</resources>
