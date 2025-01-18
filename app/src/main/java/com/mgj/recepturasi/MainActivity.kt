@@ -26,10 +26,6 @@ class MainActivity : ComponentActivity() {
         finish() // Close MainActivity after redirection
     }
 
-    /**
-     * Check if the user is already logged in.
-     * Replace with your actual authentication check logic.
-     */
     private fun checkUserLoggedIn(): Boolean {
         // Example using shared preferences (replace with your logic)
         val sharedPreferences = PreferenceManager(this)

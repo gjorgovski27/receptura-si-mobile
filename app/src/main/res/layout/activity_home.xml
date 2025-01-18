@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
@@ -36,16 +37,16 @@
                 android:layout_weight="1"
                 android:layout_marginEnd="8dp"
                 android:text="Create Recipe"
-                android:backgroundTint="@color/purple_500"
+                android:backgroundTint="@color/main"
                 android:textColor="@color/white" />
 
             <Button
-                android:id="@+id/pantryButton"
+                android:id="@+id/logoutButton"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Pantry"
-                android:backgroundTint="@color/purple_500"
+                android:text="Logout"
+                android:backgroundTint="@color/main"
                 android:textColor="@color/white" />
         </LinearLayout>
 
@@ -61,23 +62,14 @@
             android:textColorHint="@color/gray"
             android:textColor="@color/black" />
 
-        <!-- My Recipes Section -->
-        <TextView
-            android:id="@+id/myRecipesTitle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
-            android:text="My Recipes"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:textColor="@color/black" />
-
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/myRecipesRecyclerView"
+            android:id="@+id/searchResultsRecyclerView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="16dp"
+            android:visibility="gone"
             android:scrollbars="vertical" />
+
 
         <!-- Top Rated Recipes Section -->
         <TextView
@@ -95,11 +87,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:scrollbars="vertical" />
+            android:scrollbars="horizontal" />
 
-        <!-- My Favourites Section -->
+        <!-- Favourites Section -->
         <TextView
-            android:id="@+id/myFavouritesTitle"
+            android:id="@+id/favouritesTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
@@ -113,11 +105,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:scrollbars="vertical" />
+            android:scrollbars="horizontal" />
 
         <!-- News Section -->
         <TextView
-            android:id="@+id/newsTitle"
+            android:id="@+id/newsSectionTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
@@ -126,12 +118,19 @@
             android:textStyle="bold"
             android:textColor="@color/black" />
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/newsRecyclerView"
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:scrollbars="vertical" />
+            app:cardElevation="4dp"
+            app:cardCornerRadius="8dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/newsRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:scrollbars="vertical" />
+        </androidx.cardview.widget.CardView>
     </LinearLayout>
 </ScrollView>
-

@@ -2,4 +2,7 @@
     <string name="app_name">Receptura.si</string>
     <string name="news_image_desc">Image of the news article</string>
     <string name="recipe_image_desc">Image of the recipe</string>
+    <string name="recipe_image">Recipe Image</string>
+    <string name="add_to_favourites">Add to Favourites</string>
+    <string name="app_logo">App Logo</string>
 </resources>

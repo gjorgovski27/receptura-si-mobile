@@ -10,6 +10,8 @@ object RetrofitInstance {
 
     private const val BASE_URL = "https://recepturasi.azurewebsites.net/api/"
 
+    fun getBaseUrl(): String = BASE_URL
+
     // Method to create Retrofit instance with token-based interceptor
     fun getApi(context: Context): ApiService {
         // Retrieve JWT token from SharedPreferences

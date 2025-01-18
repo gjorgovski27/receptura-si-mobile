@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
@@ -25,6 +26,7 @@ class LoginActivity : AppCompatActivity() {
         val emailEditText: EditText = findViewById(R.id.emailEditText)
         val passwordEditText: EditText = findViewById(R.id.passwordEditText)
         val loginButton: Button = findViewById(R.id.loginButton)
+        val signupLink: TextView = findViewById(R.id.signupLink) // Add the signup link
 
         loginButton.setOnClickListener {
             val email = emailEditText.text.toString().trim()
@@ -57,6 +59,12 @@ class LoginActivity : AppCompatActivity() {
                     Toast.makeText(this, "Login failed: ${error.message}", Toast.LENGTH_SHORT).show()
                 }
             }
+        }
+
+        // Set OnClickListener for the signup link
+        signupLink.setOnClickListener {
+            val intent = Intent(this, SignupActivity::class.java)
+            startActivity(intent)
         }
     }
 

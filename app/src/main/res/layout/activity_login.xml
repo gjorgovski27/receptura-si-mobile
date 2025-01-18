@@ -7,6 +7,16 @@
     android:padding="16dp"
     android:background="#eaf8e7">
 
+    <!-- Logo Section -->
+    <ImageView
+        android:id="@+id/appLogo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/icon"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="@string/app_logo"
+        android:layout_marginBottom="16dp" />
+
     <TextView
         android:id="@+id/loginTitle"
         android:layout_width="wrap_content"
@@ -60,4 +70,3 @@
         android:layout_gravity="center_horizontal"
         android:padding="8dp" />
 </LinearLayout>
-
